@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="NewApi">
+    <aapt:attr name="android:drawable">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="264dp"
+            android:height="264dp"
+            android:viewportHeight="600"
+            android:viewportWidth="600">
+
+            <group android:name="characterGroup">
+                <path
+                    android:name="character"
+                    android:fillColor="#00FF00"
+                    android:pathData="M 180,0 24,24 0,80 l 24,56 56,24 56,-24 0,0 -56,-56 56,-56 0,0 -56,-24 -56,24 z" />
+            </group>
+            <group
+                android:name="ball"
+                android:translateX="80">
+                <path
+                    android:fillColor="#00FF00"
+                    android:pathData="M 72,64 l -8,8 0,16 8,8 16,0 8,-8 0,-16 -8,-8 -16,0 z" />
+            </group>
+        </vector>
+    </aapt:attr>
+
+    <target android:name="character">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:duration="1000"
+                android:propertyName="pathData"
+                android:valueFrom="M 80,0 24,24 0,80 l 24,56 56,24 56,-24 0,0 -56,-56 56,-56 0,0 -56,-24 -56,24 z"
+                android:valueTo="M 80,0 24,24 0,80 l 24,56 56,24 56,-24 24,-56 -80,0 80,0 -24,-56 -56,-24 -56,24 z"
+                android:valueType="pathType"
+                android:repeatMode="reverse"
+                android:repeatCount="1"/>
+        </aapt:attr>
+    </target>
+
+    <target android:name="ball">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:duration="2000"
+                android:propertyName="translateX"
+                android:repeatCount="0"
+                android:startDelay="500"
+                android:valueFrom="80"
+                android:valueTo="-20" />
+        </aapt:attr>
+    </target>
+</animated-vector>
