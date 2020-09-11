@@ -51,4 +51,8 @@ dependencies {
     //coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    //플링 애니메이션
+    def dynamicanimation_version = "1.0.0"
+    implementation "androidx.dynamicanimation:dynamicanimation:$dynamicanimation_version"
 }

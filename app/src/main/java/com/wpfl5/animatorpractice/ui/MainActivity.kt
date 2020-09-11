@@ -9,6 +9,8 @@ import com.wpfl5.animatorpractice.ext.startAct
 import com.wpfl5.animatorpractice.ui.cardflip.CardFlipActivity
 import com.wpfl5.animatorpractice.ui.crossfade.CrossfadeActivity
 import com.wpfl5.animatorpractice.ui.drawable.DrawableActivity
+import com.wpfl5.animatorpractice.ui.enlargement.EnlargementActivity
+import com.wpfl5.animatorpractice.ui.spring.SpringActivity
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun getLayoutRes(): Int = R.layout.activity_main
@@ -20,6 +22,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             btnDrawable.setOnClickListener { startAct<DrawableActivity>() }
             btnCrossFade.setOnClickListener { startAct<CrossfadeActivity>() }
             btnCardFlip.setOnClickListener { startAct<CardFlipActivity>() }
+            btnEnlargement.setOnClickListener { startAct<EnlargementActivity>() }
+            btnSpring.setOnClickListener { startAct<SpringActivity>() }
 
         }
     }

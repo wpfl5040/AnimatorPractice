@@ -31,6 +31,19 @@
             android:text="cardFlip Animated"
             android:layout_margin="12dp"/>
 
+        <Button
+            android:id="@+id/btn_enlargement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="enlargement Animated"
+            android:layout_margin="12dp"/>
+
+        <Button
+            android:id="@+id/btn_spring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="spring Animated"
+            android:layout_margin="12dp"/>
 
     </LinearLayout>
 </layout>
